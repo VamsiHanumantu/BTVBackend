@@ -37,7 +37,14 @@ public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<ApiErrorResponse> handleGeneric(Exception ex){
-		return buildResponse("Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR, null);
+
+	    // allow Swagger/OpenAPI to work
+	    if (ex.getClass().getName().contains("springdoc") ||
+	        ex.getClass().getName().contains("OpenAPI")) {
+	        throw new RuntimeException(ex);
+	    }
+
+	    return buildResponse("Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR, null);
 	}
 	
 	

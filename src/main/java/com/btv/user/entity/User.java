@@ -6,7 +6,7 @@ import java.util.List;
 
 import com.btv.article.entity.Article;
 import com.btv.common.entity.BaseEntity;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -44,6 +44,7 @@ public class User extends BaseEntity{
 	@OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
 	private List<Article> articles = new ArrayList<>();
 	
-	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+	@JsonIgnore
+	@OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
 	private List<UserRole> userRoles = new ArrayList<>();
 }

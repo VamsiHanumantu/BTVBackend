@@ -26,6 +26,9 @@ public class Tag extends BaseEntity{
 	@Column(nullable = false, unique = true, length=60)
 	private String slug;
 	
+	@Column(nullable = false)
+	private Boolean isActive = true;
+	
 	@OneToMany(mappedBy = "tag", fetch = FetchType.LAZY)
 	private List<ArticleTag> articleTags = new ArrayList<>();
 }

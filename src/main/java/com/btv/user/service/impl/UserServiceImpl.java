@@ -3,6 +3,7 @@ package com.btv.user.service.impl;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.btv.common.exception.ResourceNotFoundException;
@@ -26,11 +27,12 @@ public class UserServiceImpl implements UserService {
 	
 	private final UserMapper userMapper;
 	
-	
+	private final PasswordEncoder passwordEncoder;
 	
 	@Override
 	public UserResponse createUser(UserCreateRequest request) {
 	    User user = userMapper.toEntity(request);
+	    user.setPassword(passwordEncoder.encode(request.getPassword()));
 	    User savedUser = userRepository.save(user);
 		return userMapper.toResponse(savedUser);
 	}
