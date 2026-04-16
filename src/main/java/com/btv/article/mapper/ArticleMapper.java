@@ -1,5 +1,7 @@
 package com.btv.article.mapper;
 
+import java.util.List;
+
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -24,7 +26,17 @@ public interface ArticleMapper {
 	@Mapping(source = "category.name", target = "categoryName")
 	@Mapping(source = "author.id", target = "authorId")
 	@Mapping(source = "author.username", target = "authorUsername")
+	@Mapping(target = "tags", expression = "java(toTagNames(article))")
 	ArticleResponse toDto(Article article);
+
+	default List<String> toTagNames(Article article) {
+		if (article.getArticleTags() == null) {
+			return List.of();
+		}
+		return article.getArticleTags().stream()
+				.map(articleTag -> articleTag.getTag().getName())
+				.toList();
+	}
 	
 	
 	

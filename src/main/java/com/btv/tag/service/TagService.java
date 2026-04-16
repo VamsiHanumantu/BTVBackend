@@ -4,8 +4,10 @@ import com.btv.tag.dto.TagCreateRequest;
 import com.btv.tag.dto.TagResponse;
 import com.btv.tag.dto.TagUpdateRequest;
 
-import java.util.List;
 import java.util.UUID;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface TagService {
 
@@ -15,5 +17,9 @@ public interface TagService {
 
     TagResponse getTagById(UUID tagId);
 
-    List<TagResponse> getAllActiveTags();
+    Page<TagResponse> getAllTags(Pageable pageable);
+
+    Page<TagResponse> getAllActiveTags(Pageable pageable);
+
+    void deactivateTag(UUID tagId);
 }

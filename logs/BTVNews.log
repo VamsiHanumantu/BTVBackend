@@ -127,3 +127,194 @@
 2026-04-16T00:21:33.181+05:30 DEBUG 7416 --- [BTVNews] [http-nio-8082-exec-4] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.btv.user.entity.User.userRoles#ec14b5e5-13bf-4bd8-920a-72edd17ba931]
 2026-04-16T00:22:04.561+05:30 DEBUG 7416 --- [BTVNews] [http-nio-8082-exec-5] o.h.sql.results.internal.ResultsHelper   : Collection fully initialized: [com.btv.user.entity.User.userRoles#ec14b5e5-13bf-4bd8-920a-72edd17ba931]
 2026-04-16T00:22:04.573+05:30  WARN 7416 --- [BTVNews] [http-nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No enum constant com.btv.user.enums.RoleType.ER]
+2026-04-16T00:40:08.950+05:30  INFO 7416 --- [BTVNews] [RMI TCP Connection(53)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-04-16T00:40:08.956+05:30  INFO 7416 --- [BTVNews] [RMI TCP Connection(53)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-16T00:40:09.035+05:30  INFO 7416 --- [BTVNews] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-16T00:40:09.052+05:30  INFO 7416 --- [BTVNews] [RMI TCP Connection(53)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T00:40:09.064+05:30  INFO 7416 --- [BTVNews] [RMI TCP Connection(53)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-04-16T00:40:09.150+05:30  INFO 7416 --- [BTVNews] [RMI TCP Connection(53)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-04-16T22:17:43.323+05:30  INFO 4452 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Starting BtvNewsApplicationTests using Java 26 with PID 4452 (started by vamsi in C:\workspace\BTVBackend)
+2026-04-16T22:17:43.327+05:30  INFO 4452 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2026-04-16T22:17:45.333+05:30  INFO 4452 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-16T22:17:45.514+05:30  INFO 4452 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 7 JPA repository interfaces.
+2026-04-16T22:17:46.759+05:30  INFO 4452 --- [BTVNews] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-16T22:17:46.929+05:30  INFO 4452 --- [BTVNews] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-04-16T22:17:47.015+05:30  INFO 4452 --- [BTVNews] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-16T22:17:47.636+05:30  INFO 4452 --- [BTVNews] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-16T22:17:47.692+05:30  INFO 4452 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-16T22:17:48.142+05:30  INFO 4452 --- [BTVNews] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@516c20de
+2026-04-16T22:17:48.144+05:30  INFO 4452 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-16T22:17:48.315+05:30  INFO 4452 --- [BTVNews] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-16T22:17:48.331+05:30 DEBUG 4452 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@7f70e244) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@fd14789)
+2026-04-16T22:17:48.333+05:30 DEBUG 4452 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3f64d943) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@105ffc58)
+2026-04-16T22:17:50.449+05:30  INFO 4452 --- [BTVNews] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-16T22:17:50.718+05:30  INFO 4452 --- [BTVNews] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T22:17:51.409+05:30  INFO 4452 --- [BTVNews] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-16T22:17:51.619+05:30  WARN 4452 --- [BTVNews] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-16T22:17:52.888+05:30  INFO 4452 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Started BtvNewsApplicationTests in 10.372 seconds (process running for 12.512)
+2026-04-16T22:17:53.512+05:30  INFO 4452 --- [BTVNews] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T22:17:53.517+05:30  INFO 4452 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-16T22:17:53.528+05:30  INFO 4452 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-16T22:27:43.514+05:30  INFO 33852 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Starting BtvNewsApplicationTests using Java 26 with PID 33852 (started by vamsi in C:\workspace\BTVBackend)
+2026-04-16T22:27:43.520+05:30  INFO 33852 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2026-04-16T22:27:48.817+05:30  INFO 33852 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-16T22:27:49.551+05:30  INFO 33852 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 693 ms. Found 7 JPA repository interfaces.
+2026-04-16T22:27:53.127+05:30  INFO 33852 --- [BTVNews] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-16T22:27:53.695+05:30  INFO 33852 --- [BTVNews] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-04-16T22:27:53.881+05:30  INFO 33852 --- [BTVNews] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-16T22:27:56.179+05:30  INFO 33852 --- [BTVNews] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-16T22:27:56.441+05:30  INFO 33852 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-16T22:27:57.469+05:30  INFO 33852 --- [BTVNews] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6906be0f
+2026-04-16T22:27:57.477+05:30  INFO 33852 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-16T22:27:57.748+05:30  INFO 33852 --- [BTVNews] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-16T22:27:57.823+05:30 DEBUG 33852 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@fd14789) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@3f64d943)
+2026-04-16T22:27:57.825+05:30 DEBUG 33852 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@105ffc58) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@68454ed5)
+2026-04-16T22:28:04.781+05:30  INFO 33852 --- [BTVNews] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-16T22:28:05.556+05:30  INFO 33852 --- [BTVNews] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T22:28:08.262+05:30  INFO 33852 --- [BTVNews] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-16T22:28:08.814+05:30  WARN 33852 --- [BTVNews] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-16T22:28:15.764+05:30  INFO 33852 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Started BtvNewsApplicationTests in 35.056 seconds (process running for 41.965)
+2026-04-16T22:28:22.941+05:30  INFO 33852 --- [BTVNews] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T22:28:22.947+05:30  INFO 33852 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-16T22:28:23.002+05:30  INFO 33852 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-16T22:36:33.986+05:30  INFO 13412 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Starting BtvNewsApplicationTests using Java 26 with PID 13412 (started by vamsi in C:\workspace\BTVBackend)
+2026-04-16T22:36:33.994+05:30  INFO 13412 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2026-04-16T22:36:39.702+05:30  INFO 13412 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-16T22:36:40.651+05:30  INFO 13412 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 772 ms. Found 7 JPA repository interfaces.
+2026-04-16T22:36:45.352+05:30  INFO 13412 --- [BTVNews] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-16T22:36:45.771+05:30  INFO 13412 --- [BTVNews] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-04-16T22:36:46.079+05:30  INFO 13412 --- [BTVNews] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-16T22:36:48.418+05:30  INFO 13412 --- [BTVNews] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-16T22:36:48.604+05:30  INFO 13412 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-16T22:36:49.483+05:30  INFO 13412 --- [BTVNews] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@42e202d7
+2026-04-16T22:36:49.488+05:30  INFO 13412 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-16T22:36:49.818+05:30  INFO 13412 --- [BTVNews] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-16T22:36:49.864+05:30 DEBUG 13412 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@6eaf030c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@b2da3a5)
+2026-04-16T22:36:49.865+05:30 DEBUG 13412 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6dbb3d7d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a3a49e5)
+2026-04-16T22:36:57.179+05:30  INFO 13412 --- [BTVNews] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-16T22:36:57.957+05:30  INFO 13412 --- [BTVNews] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T22:37:00.617+05:30  INFO 13412 --- [BTVNews] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-16T22:37:01.247+05:30  WARN 13412 --- [BTVNews] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-16T22:37:04.767+05:30  INFO 13412 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Started BtvNewsApplicationTests in 33.344 seconds (process running for 41.708)
+2026-04-16T22:37:07.781+05:30  INFO 13412 --- [BTVNews] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T22:37:07.786+05:30  INFO 13412 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-16T22:37:07.863+05:30  INFO 13412 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-16T22:59:42.876+05:30  INFO 22144 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Starting BtvNewsApplicationTests using Java 26 with PID 22144 (started by vamsi in C:\workspace\BTVBackend)
+2026-04-16T22:59:42.881+05:30  INFO 22144 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2026-04-16T22:59:50.239+05:30  INFO 22144 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-16T22:59:51.397+05:30  INFO 22144 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1080 ms. Found 7 JPA repository interfaces.
+2026-04-16T22:59:57.318+05:30  INFO 22144 --- [BTVNews] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-16T22:59:58.151+05:30  INFO 22144 --- [BTVNews] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-04-16T22:59:58.523+05:30  INFO 22144 --- [BTVNews] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-16T23:00:01.971+05:30  INFO 22144 --- [BTVNews] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-16T23:00:02.297+05:30  INFO 22144 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-16T23:00:03.549+05:30  INFO 22144 --- [BTVNews] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15130002
+2026-04-16T23:00:03.556+05:30  INFO 22144 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-16T23:00:04.023+05:30  INFO 22144 --- [BTVNews] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-16T23:00:04.074+05:30 DEBUG 22144 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@1c788d08) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@2adc1e84)
+2026-04-16T23:00:04.076+05:30 DEBUG 22144 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a99fa07) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@45b8bbbf)
+2026-04-16T23:00:12.510+05:30  INFO 22144 --- [BTVNews] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-16T23:00:13.918+05:30  INFO 22144 --- [BTVNews] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T23:00:17.606+05:30  INFO 22144 --- [BTVNews] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-16T23:00:18.372+05:30  WARN 22144 --- [BTVNews] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-16T23:00:23.274+05:30  INFO 22144 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Started BtvNewsApplicationTests in 43.262 seconds (process running for 52.038)
+2026-04-16T23:00:27.263+05:30  INFO 22144 --- [BTVNews] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T23:00:27.268+05:30  INFO 22144 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-16T23:00:27.357+05:30  INFO 22144 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-16T23:13:16.511+05:30  INFO 32204 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Starting BtvNewsApplicationTests using Java 26 with PID 32204 (started by vamsi in C:\workspace\BTVBackend)
+2026-04-16T23:13:16.515+05:30  INFO 32204 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2026-04-16T23:13:19.952+05:30  INFO 32204 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-16T23:13:20.379+05:30  INFO 32204 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393 ms. Found 7 JPA repository interfaces.
+2026-04-16T23:13:23.465+05:30  INFO 32204 --- [BTVNews] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-16T23:13:23.780+05:30  INFO 32204 --- [BTVNews] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-04-16T23:13:23.940+05:30  INFO 32204 --- [BTVNews] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-16T23:13:25.073+05:30  INFO 32204 --- [BTVNews] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-16T23:13:25.223+05:30  INFO 32204 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-16T23:13:26.025+05:30  INFO 32204 --- [BTVNews] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28e48b65
+2026-04-16T23:13:26.031+05:30  INFO 32204 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-16T23:13:26.403+05:30  INFO 32204 --- [BTVNews] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-16T23:13:26.448+05:30 DEBUG 32204 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@45b27ad3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@3f908bc0)
+2026-04-16T23:13:26.449+05:30 DEBUG 32204 --- [BTVNews] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@422ba9b7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@26cdd4af)
+2026-04-16T23:13:31.559+05:30  INFO 32204 --- [BTVNews] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-16T23:13:32.201+05:30  INFO 32204 --- [BTVNews] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T23:13:34.834+05:30  INFO 32204 --- [BTVNews] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-16T23:13:35.423+05:30  WARN 32204 --- [BTVNews] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-16T23:13:39.166+05:30  INFO 32204 --- [BTVNews] [main] com.btv.BtvNewsApplicationTests          : Started BtvNewsApplicationTests in 24.226 seconds (process running for 28.033)
+2026-04-16T23:13:41.000+05:30  INFO 32204 --- [BTVNews] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T23:13:41.006+05:30  INFO 32204 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-16T23:13:41.084+05:30  INFO 32204 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-16T23:37:52.098+05:30  INFO 25124 --- [BTVNews] [main] c.b.a.ArticleWorkflowIntegrationTests    : Starting ArticleWorkflowIntegrationTests using Java 26 with PID 25124 (started by vamsi in C:\workspace\BTVBackend)
+2026-04-16T23:37:52.105+05:30  INFO 25124 --- [BTVNews] [main] c.b.a.ArticleWorkflowIntegrationTests    : No active profile set, falling back to 1 default profile: "default"
+2026-04-16T23:38:00.583+05:30  INFO 25124 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-16T23:38:01.235+05:30  INFO 25124 --- [BTVNews] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 596 ms. Found 7 JPA repository interfaces.
+2026-04-16T23:38:07.777+05:30  INFO 25124 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-16T23:38:09.220+05:30  INFO 25124 --- [BTVNews] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61993d18
+2026-04-16T23:38:09.226+05:30  INFO 25124 --- [BTVNews] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-16T23:38:09.382+05:30  INFO 25124 --- [BTVNews] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/BTVNews (PostgreSQL 18.3)
+2026-04-16T23:38:09.451+05:30  WARN 25124 --- [BTVNews] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 18.3 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2026-04-16T23:38:09.559+05:30  INFO 25124 --- [BTVNews] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-04-16T23:38:09.571+05:30  INFO 25124 --- [BTVNews] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.064s)
+2026-04-16T23:38:09.730+05:30  INFO 25124 --- [BTVNews] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2026-04-16T23:38:09.899+05:30  INFO 25124 --- [BTVNews] [main] o.f.core.internal.command.DbBaseline     : Successfully baselined schema with version: 1
+2026-04-16T23:38:09.964+05:30  INFO 25124 --- [BTVNews] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2026-04-16T23:38:09.979+05:30  INFO 25124 --- [BTVNews] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-04-16T23:38:10.672+05:30  INFO 25124 --- [BTVNews] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-16T23:38:11.159+05:30  INFO 25124 --- [BTVNews] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-04-16T23:38:11.407+05:30  INFO 25124 --- [BTVNews] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-16T23:38:13.265+05:30  INFO 25124 --- [BTVNews] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-16T23:38:13.536+05:30  WARN 25124 --- [BTVNews] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-16T23:38:13.605+05:30  INFO 25124 --- [BTVNews] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-16T23:38:21.700+05:30  INFO 25124 --- [BTVNews] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-16T23:38:21.718+05:30  INFO 25124 --- [BTVNews] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T23:38:25.335+05:30  INFO 25124 --- [BTVNews] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-16T23:38:29.864+05:30  INFO 25124 --- [BTVNews] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-04-16T23:38:32.816+05:30  INFO 25124 --- [BTVNews] [main] c.b.a.ArticleWorkflowIntegrationTests    : Started ArticleWorkflowIntegrationTests in 43.336 seconds (process running for 50.291)
+2026-04-16T23:38:37.228+05:30  INFO 25124 --- [BTVNews] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.btv.auth.AuthSignupIntegrationTests]: AuthSignupIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-16T23:38:37.378+05:30  INFO 25124 --- [BTVNews] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.btv.BtvNewsApplication for test class com.btv.auth.AuthSignupIntegrationTests
+2026-04-16T23:38:37.666+05:30  INFO 25124 --- [BTVNews] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.btv.BtvNewsApplicationTests]: BtvNewsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-16T23:38:37.759+05:30  INFO 25124 --- [BTVNews] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.btv.BtvNewsApplication for test class com.btv.BtvNewsApplicationTests
+2026-04-16T23:38:37.985+05:30  INFO 25124 --- [BTVNews] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-16T23:38:37.992+05:30  INFO 25124 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-16T23:38:38.028+05:30  INFO 25124 --- [BTVNews] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

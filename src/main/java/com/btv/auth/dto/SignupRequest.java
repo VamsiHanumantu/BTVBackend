@@ -1,7 +1,4 @@
-package com.btv.user.dto;
-
-import java.util.List;
-import java.util.UUID;
+package com.btv.auth.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -11,19 +8,17 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class UserCreateRequest {
+public class SignupRequest {
 
 	@NotBlank(message = "Username is required")
 	@Size(max = 50)
 	private String username;
-	
+
 	@NotBlank(message = "Email is required")
-	@Email(message = "Invalid message Format")
+	@Email(message = "Invalid email format")
 	private String email;
-	
+
 	@NotBlank(message = "Password is required")
 	@Size(min = 6)
 	private String password;
-
-	private List<UUID> roleIds;
 }

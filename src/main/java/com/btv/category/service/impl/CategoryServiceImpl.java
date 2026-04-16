@@ -1,8 +1,9 @@
 package com.btv.category.service.impl;
 
-import java.util.List;
 import java.util.UUID;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.btv.category.dto.CategoryCreateRequest;
@@ -52,9 +53,22 @@ public class CategoryServiceImpl implements CategoryService {
 	}
 
 	@Override
-	public List<CategoryResponse> getAllActiveCategories() {
+	public Page<CategoryResponse> getAllActiveCategories(Pageable pageable) {
 		
-		return categoryRepository.findByisActiveTrue().stream().map(categoryMapper::toResponse).toList();
+		return categoryRepository.findByIsActiveTrue(pageable).map(categoryMapper::toResponse);
+	}
+
+	@Override
+	public Page<CategoryResponse> getAllCategories(Pageable pageable) {
+		return categoryRepository.findAll(pageable).map(categoryMapper::toResponse);
+	}
+
+	@Override
+	public void deactivateCategory(UUID categoryId) {
+		Category category = categoryRepository.findById(categoryId).orElseThrow(
+				()-> new ResourceNotFoundException("Category not found")
+				);
+		category.setIsActive(false);
 	}
 
 }

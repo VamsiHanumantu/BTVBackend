@@ -3,8 +3,11 @@ package com.btv.common.exception;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;   
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -26,6 +29,21 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(UnauthorizedException.class)
 	public ResponseEntity<ApiErrorResponse> handleUnauthorized(UnauthorizedException ex){
 		return buildResponse(ex.getMessage(), HttpStatus.UNAUTHORIZED, null);
+	}
+
+	@ExceptionHandler(BadCredentialsException.class)
+	public ResponseEntity<ApiErrorResponse> handleBadCredentials(BadCredentialsException ex){
+		return buildResponse("Invalid username or password", HttpStatus.UNAUTHORIZED, null);
+	}
+
+	@ExceptionHandler(AccessDeniedException.class)
+	public ResponseEntity<ApiErrorResponse> handleAccessDenied(AccessDeniedException ex){
+		return buildResponse("Access denied", HttpStatus.FORBIDDEN, null);
+	}
+
+	@ExceptionHandler(DataIntegrityViolationException.class)
+	public ResponseEntity<ApiErrorResponse> handleDataIntegrity(DataIntegrityViolationException ex){
+		return buildResponse("Request conflicts with existing data", HttpStatus.CONFLICT, null);
 	}
 	
 	@ExceptionHandler(MethodArgumentNotValidException.class)

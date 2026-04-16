@@ -8,16 +8,19 @@ import com.btv.user.service.RoleService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/roles")
 @RequiredArgsConstructor
+@PreAuthorize("hasRole('ADMIN')")
 public class RoleController {
 
 	private final RoleService roleService;
@@ -42,9 +45,15 @@ public class RoleController {
 	}
 
 	@GetMapping
-	public ResponseEntity<List<RoleResponse>> getAllRoles() {
-		List<RoleResponse> response = roleService.getAllRoles();
+	public ResponseEntity<Page<RoleResponse>> getAllRoles(Pageable pageable) {
+		Page<RoleResponse> response = roleService.getAllRoles(pageable);
 		return ResponseEntity.ok(response);
+	}
+
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Void> deleteRole(@PathVariable UUID id) {
+		roleService.deleteRole(id);
+		return ResponseEntity.noContent().build();
 	}
 
 }

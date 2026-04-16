@@ -13,9 +13,11 @@ unmappedTargetPolicy = ReportingPolicy.IGNORE
 )
 public interface RoleMapper {
 
+@Mapping(target = "name", ignore = true)
 Role toEntity(RoleCreateRequest request);
 
 @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
+@Mapping(target = "name", ignore = true)
 void updateEntity(
         RoleUpdateRequest request,
         @MappingTarget Role role

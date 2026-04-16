@@ -1,6 +1,7 @@
 package com.btv.user.dto;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 import lombok.Getter;
@@ -16,7 +17,9 @@ public class UserResponse {
 	
 	private String email;
 	
-	private String isActive;
+	private Boolean isActive;
+
+	private List<String> roles;
 	
 	private LocalDateTime createdAt;
 	

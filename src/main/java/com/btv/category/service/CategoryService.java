@@ -1,7 +1,9 @@
 package com.btv.category.service;
 
-import java.util.List;
 import java.util.UUID;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import com.btv.category.dto.CategoryCreateRequest;
 import com.btv.category.dto.CategoryResponse;
@@ -15,5 +17,9 @@ public interface CategoryService {
 	
 	CategoryResponse getCategoryById(UUID id);
 	
-	List<CategoryResponse> getAllActiveCategories();
+	Page<CategoryResponse> getAllCategories(Pageable pageable);
+
+	Page<CategoryResponse> getAllActiveCategories(Pageable pageable);
+
+	void deactivateCategory(UUID categoryId);
 }

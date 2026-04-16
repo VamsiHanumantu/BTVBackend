@@ -12,8 +12,10 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.UUID;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 @Service
 @RequiredArgsConstructor
@@ -54,11 +56,22 @@ public class TagServiceImpl implements TagService {
     }
 
     @Override
-    public List<TagResponse> getAllActiveTags() {
+    public Page<TagResponse> getAllActiveTags(Pageable pageable) {
 
-        return tagRepository.findByIsActiveTrue()
-                .stream()
-                .map(tagMapper::toResponse)
-                .toList();
+        return tagRepository.findByIsActiveTrue(pageable)
+                .map(tagMapper::toResponse);
+    }
+
+    @Override
+    public Page<TagResponse> getAllTags(Pageable pageable) {
+        return tagRepository.findAll(pageable)
+                .map(tagMapper::toResponse);
+    }
+
+    @Override
+    public void deactivateTag(UUID tagId) {
+        Tag tag = tagRepository.findById(tagId)
+                .orElseThrow(() -> new ResourceNotFoundException("Tag not found"));
+        tag.setIsActive(false);
     }
 }

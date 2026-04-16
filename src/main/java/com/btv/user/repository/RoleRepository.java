@@ -7,8 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.btv.user.entity.Role;
+import com.btv.user.enums.RoleType;
 
 @Repository
 public interface RoleRepository extends JpaRepository<Role, UUID> {
-	Optional<Role> findByName(String name);
+	Optional<Role> findByName(RoleType name);
 }
